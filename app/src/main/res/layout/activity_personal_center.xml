@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#015595"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"
+        android:id="@+id/iv_personal_center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_personal_center"
+        android:text="个人中心"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/iv_personal_center"
+        android:layout_toRightOf="@+id/iv_personal_center"
+        android:layout_toEndOf="@+id/iv_personal_center" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_personal_menu"
+        android:src="@drawable/menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_personal_head"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/head"
+        android:foregroundGravity="center_horizontal"
+        android:layout_below="@+id/iv_personal_center"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号管理"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/iv_personal_head"
+        android:layout_alignLeft="@+id/iv_personal_center"
+        android:layout_alignStart="@+id/iv_personal_center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_personal_account_control" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/tv_personal_account_control"
+        android:layout_alignLeft="@+id/iv_personal_center"
+        android:layout_alignStart="@+id/iv_personal_center"
+        android:id="@+id/view4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换账号"
+        android:textSize="27dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/view4"
+        android:layout_alignRight="@+id/tv_personal_account_control"
+        android:layout_alignEnd="@+id/tv_personal_account_control"
+        android:id="@+id/tv_personal_switch" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/tv_personal_switch"
+        android:layout_alignRight="@+id/iv_personal_menu"
+        android:layout_alignEnd="@+id/iv_personal_menu"
+        android:id="@+id/view5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出账号"
+        android:textSize="27dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/view5"
+        android:layout_alignLeft="@+id/tv_personal_switch"
+        android:layout_alignStart="@+id/tv_personal_switch"
+        android:id="@+id/tv_personal_log_out" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_personal_log_out"
+        android:layout_alignLeft="@+id/iv_personal_center"
+        android:layout_alignStart="@+id/iv_personal_center"
+        android:id="@+id/view6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_personal_update"
+        android:text="版本升级"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/view6"
+        android:layout_alignRight="@+id/tv_personal_log_out"
+        android:layout_alignEnd="@+id/tv_personal_log_out" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_personal_update"
+        android:id="@+id/view7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理设备"
+        android:textSize="30dp"
+        android:id="@+id/tv_personal_device_control"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/view7"
+        android:layout_alignLeft="@+id/tv_personal_update"
+        android:layout_alignStart="@+id/tv_personal_update" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_personal_device_control"
+        android:id="@+id/view8" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知提醒"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/st_personal_notice"
+        android:layout_below="@+id/view8"
+        android:layout_alignLeft="@+id/tv_personal_device_control"
+        android:layout_alignStart="@+id/tv_personal_device_control"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

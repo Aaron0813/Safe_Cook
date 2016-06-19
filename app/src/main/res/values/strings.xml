@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SafeCook</string>
+    <string name="device_name">抽油烟机</string>
+    <string name="application_details_switch">定时开关</string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#015595"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_go_back"
+        android:src="@drawable/go_back" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/iv_details_menu" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv_device"
+        android:src="@drawable/hoods"
+        android:layout_below="@+id/iv_details_menu"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:paddingTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:text="@string/device_name"
+        android:layout_below="@+id/iv_device"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_device_name" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定时开关"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/s_timeSwitch"
+        android:layout_below="@+id/tv_device_name"
+        android:layout_alignRight="@+id/iv_details_menu"
+        android:layout_alignEnd="@+id/iv_details_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/s_timeSwitch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text="开启时间"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/view1"
+        android:layout_toLeftOf="@+id/tv_device_name"
+        android:layout_toStartOf="@+id/tv_device_name"
+        android:id="@+id/tv_openTime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:00"
+        android:textColor="#FFFFFF"
+        android:id="@+id/editText"
+        android:layout_below="@+id/view1"
+        android:layout_toRightOf="@+id/iv_device"
+        android:layout_toEndOf="@+id/iv_device" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text="持续时间"
+        android:id="@+id/tv_holdTime"
+        android:layout_below="@+id/tv_openTime"
+        android:layout_alignLeft="@+id/tv_openTime"
+        android:layout_alignStart="@+id/tv_openTime" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="5dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/tv_holdTime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view2" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="档位调节"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/s_gear"
+        android:layout_below="@+id/tv_holdTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/view1"
+        android:layout_alignEnd="@+id/view1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text="档位"
+        android:id="@+id/textView"
+        android:layout_below="@+id/s_gear"
+        android:layout_toRightOf="@+id/iv_go_back"
+        android:layout_toEndOf="@+id/iv_go_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text="30min"
+        android:paddingTop="5dp"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text="自动"
+        android:paddingTop="5dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/s_gear"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+</RelativeLayout>

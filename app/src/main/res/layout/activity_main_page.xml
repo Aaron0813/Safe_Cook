@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#015595">
+
+
+    <ImageView
+        android:paddingTop="5dp"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_location"
+        android:src="@drawable/locate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:text="沈阳"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/iv_location"
+        android:layout_toEndOf="@id/iv_location"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_city" />
+
+    <ImageView
+        android:paddingTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_mainPage_menu"
+        android:src="@drawable/menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:text="室 内"
+        android:textColor="#FFFFFF"
+        android:textSize="38dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignRight="@+id/tv_city"
+        android:layout_alignEnd="@+id/tv_city"
+        android:id="@+id/tv_inRoom" />
+
+    <ImageView
+        android:paddingTop="5dp"
+        android:layout_width="70dp"
+        android:paddingLeft="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_wind"
+        android:src="@drawable/wind"
+        android:layout_below="@+id/tv_inRoom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:text="4~5"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/tv_inRoom"
+        android:layout_toRightOf="@+id/tv_inRoom"
+        android:layout_toEndOf="@+id/tv_inRoom" />
+
+    <ImageView
+        android:paddingTop="5dp"
+        android:layout_width="70dp"
+        android:paddingLeft="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/wind"
+        android:layout_below="@+id/iv_wind"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:text="20%"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ImageView
+        android:paddingTop="5dp"
+        android:layout_width="70dp"
+        android:paddingLeft="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/wind"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:text="26℃"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <ImageView
+        android:paddingTop="5dp"
+        android:layout_width="70dp"
+        android:paddingLeft="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/wind"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:text="优良"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/switch1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="油烟机"
+        android:textSize="25dp"
+        android:height="30dp"
+        android:id="@+id/switch1"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/tv_inRoom"
+        android:layout_alignStart="@+id/tv_inRoom"
+        android:layout_toLeftOf="@+id/iv_mainPage_menu"
+        android:layout_toStartOf="@+id/iv_mainPage_menu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="燃气灶"
+        android:textSize="25dp"
+        android:height="30dp"
+        android:id="@+id/switch2"
+        android:layout_below="@+id/switch1"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="空气净化器"
+        android:textSize="25dp"
+        android:height="30dp"
+        android:id="@+id/switch3"
+        android:layout_alignRight="@+id/switch2"
+        android:layout_alignEnd="@+id/switch2"
+        android:layout_below="@+id/switch2"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="红外检测器"
+        android:textSize="25dp"
+        android:height="30dp"
+        android:id="@+id/switch4"
+        android:layout_below="@+id/switch3"
+        android:layout_alignLeft="@+id/switch3"
+        android:layout_alignStart="@+id/switch3"
+        android:layout_alignRight="@+id/switch3"
+        android:layout_alignEnd="@+id/switch3" />
+
+</RelativeLayout>
