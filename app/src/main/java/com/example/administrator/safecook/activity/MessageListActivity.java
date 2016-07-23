@@ -28,7 +28,7 @@ public class MessageListActivity extends AppCompatActivity {
     List<ItemBean> itemBeans=new ArrayList<ItemBean>();
     Button unRead;
     Button deleteDetails;
-    ImageView messageList_Menu;
+//    ImageView messageList_Menu;
     TextView tvMessage;
 
     //为后期连接网络做准备
@@ -90,15 +90,15 @@ public class MessageListActivity extends AppCompatActivity {
                 Toast.makeText(MessageListActivity.this,"删除记录被点击了",Toast.LENGTH_SHORT).show();
             }
         });
-        messageList_Menu= (ImageView) findViewById(R.id.iv_message_list_menu);
-        messageList_Menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MessageListActivity.this,"菜单键被点击了",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MessageListActivity.this,PersonalCenter.class);
-                startActivity(intent);
-            }
-        });
+//        messageList_Menu= (ImageView) findViewById(R.id.iv_message_list_menu);
+//        messageList_Menu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MessageListActivity.this,"菜单键被点击了",Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(MessageListActivity.this,PersonalCenter.class);
+//                startActivity(intent);
+//            }
+//        });
         messageListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

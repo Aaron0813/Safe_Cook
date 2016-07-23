@@ -13,8 +13,6 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.administrator.safecook.R;
-import com.example.administrator.safecook.activity.DeviceDetailsActivity;
-import com.example.administrator.safecook.activity.MainPageActivity;
 import com.example.administrator.safecook.activity.MessageListActivity;
 
 /**

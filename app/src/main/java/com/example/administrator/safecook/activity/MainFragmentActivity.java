@@ -49,7 +49,7 @@ public class MainFragmentActivity extends FragmentActivity {
 //        tv_messageList = (TextView) findViewById(R.id.id_tv_messageList);
 //        tv_personal = (TextView) findViewById(R.id.id_tv_personal);
         init();
-        System.out.println("创建完成");
+//        System.out.println("创建完成");
     }
     private void init(){
         tv_indoorIntroduction = (TextView) findViewById(R.id.id_tv_introduction);
