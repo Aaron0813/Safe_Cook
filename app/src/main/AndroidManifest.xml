@@ -20,6 +20,7 @@
         <activity android:name=".activity.MessageListActivity" />
         <activity android:name=".activity.MessageDetailActivity" />
         <activity android:name=".activity.PersonalCenter" />
+        <activity android:name=".activity.DrawableActivity"></activity>
     </application>
 
 </manifest>

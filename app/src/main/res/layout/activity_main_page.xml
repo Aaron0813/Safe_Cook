@@ -111,9 +111,9 @@
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:id="@+id/textView7"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_alignStart="@+id/textView6" />
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
     <View
         android:layout_width="match_parent"
         android:background="#FFFFFF"

@@ -51,17 +51,18 @@ public class MainPageActivity extends AppCompatActivity {
 //
 //            }
 //        });
+
         //油烟机开关-s1
         s1= (Switch) findViewById(R.id.switch1);
         s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-//                if (isChecked)
-//                    Toast.makeText(MainPageActivity.this,"油烟机开关已打开",Toast.LENGTH_SHORT).show();
-//                else
-//                    Toast.makeText(MainPageActivity.this,"油烟机开关已关闭",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MainPageActivity.this,DeviceDetailsActivity.class);
-                startActivity(intent);
+                if (isChecked)
+                    Toast.makeText(MainPageActivity.this,"油烟机开关已打开",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainPageActivity.this,"油烟机开关已关闭",Toast.LENGTH_SHORT).show();
+//                Intent intent=new Intent(MainPageActivity.this,DeviceDetailsActivity.class);
+//                startActivity(intent);
             }
         });
         //燃气灶开关-s2

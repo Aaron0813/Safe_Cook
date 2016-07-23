@@ -1,9 +1,7 @@
 package com.example.administrator.safecook.fragment;
 
-import android.app.Activity;
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.*;
 import android.view.LayoutInflater;
@@ -58,10 +56,10 @@ public class IndoorIntroductionFragment extends Fragment {
         s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-//                if (isChecked)
-//                    Toast.makeText(MainPageActivity.this,"油烟机开关已打开",Toast.LENGTH_SHORT).show();
-//                else
-//                    Toast.makeText(MainPageActivity.this,"油烟机开关已关闭",Toast.LENGTH_SHORT).show();
+                if (isChecked)
+                    Toast.makeText(getActivity(),"油烟机开关已打开",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getActivity(),"油烟机开关已关闭",Toast.LENGTH_SHORT).show();
 //                Intent intent=new Intent(MainPageActivity.this,DeviceDetailsActivity.class);
 //                startActivity(intent);
             }
