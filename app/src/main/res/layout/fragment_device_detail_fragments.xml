@@ -3,20 +3,20 @@
     android:layout_width="match_parent"
     android:background="#015595"
     android:layout_height="match_parent">
-    <!--<ImageView-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:id="@+id/iv_go_back"-->
-        <!--android:src="@drawable/go_back" />-->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_go_back"
+        android:src="@drawable/go_back" />
 
-    <!--<ImageView-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:src="@drawable/menu"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:id="@+id/iv_details_menu" />-->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/iv_details_menu" />
 
     <ImageView
         android:layout_width="200dp"

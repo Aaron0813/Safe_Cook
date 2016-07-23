@@ -8,18 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainPageActivity">
+        <activity android:name=".activity.MainFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainPageActivity"></activity>
         <activity android:name=".activity.DeviceDetailsActivity" />
         <activity android:name=".activity.MessageListActivity" />
         <activity android:name=".activity.MessageDetailActivity" />
         <activity android:name=".activity.PersonalCenter" />
-        <activity android:name=".activity.DrawableActivity"></activity>
     </application>
 
 </manifest>

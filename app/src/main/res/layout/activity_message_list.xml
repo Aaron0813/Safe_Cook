@@ -4,34 +4,34 @@
     android:layout_height="match_parent"
     android:background="#015595">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:paddingTop="5dp"
-        android:src="@drawable/message"
-        android:id="@+id/iv_messageList"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:layout_toRightOf="@+id/iv_messageList"
-        android:layout_toEndOf="@+id/iv_messageList"
-        android:text="消息列表"
-        android:textSize="28dp"
-        android:textColor="#FFFFFF"/>
+    <!--<ImageView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:src="@drawable/message"-->
+        <!--android:id="@+id/iv_messageList"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="8dp"-->
+        <!--android:layout_toRightOf="@+id/iv_messageList"-->
+        <!--android:layout_toEndOf="@+id/iv_messageList"-->
+        <!--android:text="消息列表"-->
+        <!--android:textSize="28dp"-->
+        <!--android:textColor="#FFFFFF"/>-->
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/menu"
-        android:paddingTop="5dp"
-        android:id="@+id/iv_message_list_menu"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+    <!--<ImageView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@drawable/menu"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:id="@+id/iv_message_list_menu"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
 
     <ImageView
         android:paddingTop="20dp"

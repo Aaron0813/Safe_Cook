@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="40dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_indoor_introduction"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/id_tv_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="室内概况"
+                android:textColor="#008000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_tv_deviceDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备详情"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_tv_messageList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息列表"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_tv_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_iv_tabline"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:background="@drawable/tabline" />
+
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.example.administrator.safecook.activity;
  * Aaron 2016/6/17
  */
 import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,22 @@ import android.widget.Toast;
 import com.example.administrator.safecook.R;
 
 public class MainPageActivity extends AppCompatActivity {
-    ImageView iv_mainPage_menu;
+//    ImageView iv_mainPage_menu;
+//    Switch s1;
+//    Switch s2;
+//    Switch s3;
+//    Switch s4;
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main_page);
+//        iv_mainPage_menu= (ImageView) findViewById(R.id.iv_mainPage_menu);
+//        s1= (Switch) findViewById(R.id.switch1);
+//        s2= (Switch) findViewById(R.id.switch2);
+//        s3= (Switch) findViewById(R.id.switch3);
+//        s4= (Switch) findViewById(R.id.switch4);
+//    }
+//        ImageView iv_mainPage_menu;
     Switch s1;
     Switch s2;
     Switch s3;
@@ -25,16 +41,16 @@ public class MainPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main_page);
-        iv_mainPage_menu= (ImageView) findViewById(R.id.iv_mainPage_menu);
-        iv_mainPage_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Toast.makeText(MainPageActivity.this,"菜单键被点击",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MainPageActivity.this,MessageListActivity.class);
-                startActivity(intent);
-
-            }
-        });
+//        iv_mainPage_menu= (ImageView) findViewById(R.id.iv_mainPage_menu);
+//        iv_mainPage_menu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Toast.makeText(MainPageActivity.this,"菜单键被点击",Toast.LENGTH_SHORT).show();
+//                Intent intent=new Intent(MainPageActivity.this,MessageListActivity.class);
+//                startActivity(intent);
+//
+//            }
+//        });
         //油烟机开关-s1
         s1= (Switch) findViewById(R.id.switch1);
         s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
