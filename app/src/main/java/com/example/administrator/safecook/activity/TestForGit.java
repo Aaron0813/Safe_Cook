@@ -5,4 +5,5 @@ package com.example.administrator.safecook.activity;
  */
 public class TestForGit {
     String name;
+    String ssd;
 }
