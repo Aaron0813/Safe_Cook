@@ -15,8 +15,10 @@ import android.view.Display;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.administrator.safecook.R;
+import com.example.administrator.safecook.domain.Person;
 import com.example.administrator.safecook.fragment.DeviceDetailFragment;
 import com.example.administrator.safecook.fragment.IndoorIntroductionFragment;
 import com.example.administrator.safecook.fragment.MessageListFragment;
@@ -24,6 +26,12 @@ import com.example.administrator.safecook.fragment.PersonalFragment;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.bmob.push.BmobPush;
+import cn.bmob.v3.Bmob;
+import cn.bmob.v3.BmobInstallation;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.SaveListener;
 
 /**
  * Created by Administrator on 2016/7/23.
@@ -42,6 +50,11 @@ public class MainFragmentActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bmob.initialize(this, "610e36d7ee3455b1fe6efd7ab6c6fd4a");
+        // 使用推送服务时的初始化操作---少个参数
+        BmobInstallation.getCurrentInstallation().save();
+        // 启动推送服务
+        BmobPush.startWork(this);
         setContentView(R.layout.main_page_fragment);
         initTabLine();
 //        tv_indoorIntroduction = (TextView) findViewById(R.id.id_tv_introduction);
@@ -49,7 +62,24 @@ public class MainFragmentActivity extends FragmentActivity {
 //        tv_messageList = (TextView) findViewById(R.id.id_tv_messageList);
 //        tv_personal = (TextView) findViewById(R.id.id_tv_personal);
         init();
+        test();
 //        System.out.println("创建完成");
+    }
+    void test(){
+        Person p2 = new Person();
+        p2.setName("lucky");
+        p2.setAddress("北京海淀");
+        p2.save(new SaveListener<String>() {
+            @Override
+            public void done(String objectId,BmobException e) {
+                if(e==null){
+                    Toast.makeText(MainFragmentActivity.this,"添加数据成功，返回objectId为："+objectId,Toast.LENGTH_SHORT).show();
+                }else{
+//                    toast("创建数据失败：" + e.getMessage());
+                    Toast.makeText(MainFragmentActivity.this,"创建数据失败：" + e.getMessage(),Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
     private void init(){
         tv_indoorIntroduction = (TextView) findViewById(R.id.id_tv_introduction);
