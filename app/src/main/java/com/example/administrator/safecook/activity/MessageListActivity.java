@@ -95,7 +95,7 @@ public class MessageListActivity extends AppCompatActivity {
 //            @Override
 //            public void onClick(View view) {
 //                Toast.makeText(MessageListActivity.this,"菜单键被点击了",Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(MessageListActivity.this,PersonalCenter.class);
+//
 //                startActivity(intent);
 //            }
 //        });

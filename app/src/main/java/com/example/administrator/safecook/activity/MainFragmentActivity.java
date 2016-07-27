@@ -1,8 +1,6 @@
 package com.example.administrator.safecook.activity;
 
-import android.app.Activity;
 import android.graphics.Color;
-import android.os.PersistableBundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -12,6 +10,7 @@ import android.view.ViewGroup.*;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,16 +26,16 @@ import com.example.administrator.safecook.fragment.PersonalFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.bmob.push.BmobPush;
 import cn.bmob.v3.Bmob;
-import cn.bmob.v3.BmobInstallation;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
+
 
 /**
  * Created by Administrator on 2016/7/23.
  */
 public class MainFragmentActivity extends FragmentActivity {
+    private Button bt_notRead;
     private ViewPager mViewPager;
     private FragmentPagerAdapter mAdapter;
     private List<Fragment> mDates;
@@ -47,23 +46,19 @@ public class MainFragmentActivity extends FragmentActivity {
     private int mScreenThird;
     private ImageView imageView;
     private int mCurrentPageIndex;
+
+
+    private static String APPID = "c9797b0def9ca1c4c7e1c2d36d29c15f";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bmob.initialize(this, "610e36d7ee3455b1fe6efd7ab6c6fd4a");
-        // 使用推送服务时的初始化操作---少个参数
-        BmobInstallation.getCurrentInstallation().save();
-        // 启动推送服务
-        BmobPush.startWork(this);
-        setContentView(R.layout.main_page_fragment);
+        // 初始化BmobSDK
+        Bmob.initialize(this, APPID);
+
+        setContentView(R.layout.fragment_main_page);
         initTabLine();
-//        tv_indoorIntroduction = (TextView) findViewById(R.id.id_tv_introduction);
-//        tv_deviceDetail = (TextView) findViewById(R.id.id_tv_deviceDetails);
-//        tv_messageList = (TextView) findViewById(R.id.id_tv_messageList);
-//        tv_personal = (TextView) findViewById(R.id.id_tv_personal);
         init();
-        test();
-//        System.out.println("创建完成");
     }
     void test(){
         Person p2 = new Person();
@@ -82,6 +77,7 @@ public class MainFragmentActivity extends FragmentActivity {
         });
     }
     private void init(){
+
         tv_indoorIntroduction = (TextView) findViewById(R.id.id_tv_introduction);
         tv_deviceDetail = (TextView) findViewById(R.id.id_tv_deviceDetails);
         tv_messageList = (TextView) findViewById(R.id.id_tv_messageList);
@@ -96,6 +92,10 @@ public class MainFragmentActivity extends FragmentActivity {
         mDates.add(deviceFragment);
         mDates.add(messageFragment);
         mDates.add(personalFragment);
+
+
+        /*测试推送*/
+//        bt_notRead= (Button) messageFragment.getActivity().findViewById(R.id.bt_not_read);
 
         // 添加一个监听页面转换的事件，从而完成页面转换时颜色改变的效果
         mAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
