@@ -58,7 +58,7 @@ public class MainFragmentActivity extends FragmentActivity {
 
         // 初始化BmobSDK
         Bmob.initialize(this, APPID);
-        // 使用推送服务时的初始化操作
+        // 使用推送服务时的初始化操作--将设备信息保存到MyInstallation表中
         BmobInstallation.getCurrentInstallation().save();
         // 启动推送服务
         BmobPush.startWork(this);

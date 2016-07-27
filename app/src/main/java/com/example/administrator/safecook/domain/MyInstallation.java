@@ -1,5 +1,7 @@
 package com.example.administrator.safecook.domain;
 
+import android.content.Context;
+
 import cn.bmob.v3.BmobInstallation;
 
 /**
@@ -7,6 +9,10 @@ import cn.bmob.v3.BmobInstallation;
  */
 public class MyInstallation extends BmobInstallation{
     String userID;
+
+    public MyInstallation() {
+        super();
+    }
 
     public String getUserID() {
         return userID;
