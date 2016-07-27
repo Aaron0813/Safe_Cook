@@ -48,7 +48,7 @@ public class MainFragmentActivity extends FragmentActivity {
     private int mCurrentPageIndex;
 
 
-    private static String APPID = "c9797b0def9ca1c4c7e1c2d36d29c15f";
+    private static String APPID = "e8df3a4a59521a65d38869db05fb1210";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

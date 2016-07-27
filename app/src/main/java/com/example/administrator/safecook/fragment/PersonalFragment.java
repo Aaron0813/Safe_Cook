@@ -7,16 +7,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.administrator.safecook.R;
-import com.example.administrator.safecook.activity.ResistActivity;
+import com.example.administrator.safecook.activity.LoginActivity;
 
 /**
  * Created by Administrator on 2016/7/23.
  */
 public class PersonalFragment extends Fragment {
-    private Button button;
+//    private Button button;
+    private TextView tv_login;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -27,12 +28,21 @@ public class PersonalFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        button=(Button)getActivity().findViewById(R.id.tv_personal_account_control);
-        button.setOnClickListener(new View.OnClickListener() {
+//        button=(Button)getActivity().findViewById(R.id.tv_personal_account_control);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent;
+//                intent = new Intent(getActivity(),ResistActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+        tv_login= (TextView) getActivity().findViewById(R.id.tv_personal_login);
+        tv_login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent;
-                intent = new Intent(getActivity(),ResistActivity.class);
+                intent = new Intent(getActivity(),LoginActivity.class);
                 startActivity(intent);
             }
         });

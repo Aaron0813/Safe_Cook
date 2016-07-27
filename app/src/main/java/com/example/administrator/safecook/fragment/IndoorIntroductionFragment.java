@@ -57,8 +57,6 @@ public class IndoorIntroductionFragment extends Fragment {
                     Toast.makeText(getActivity(),"油烟机开关已打开",Toast.LENGTH_SHORT).show();
                 else
                     Toast.makeText(getActivity(),"油烟机开关已关闭",Toast.LENGTH_SHORT).show();
-//                Intent intent=new Intent(getActivity(),ResistActivity.class);
-//                startActivity(intent);
             }
         });
         //燃气灶开关-s2
