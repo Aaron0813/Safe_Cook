@@ -26,7 +26,9 @@ import com.example.administrator.safecook.fragment.PersonalFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.bmob.push.BmobPush;
 import cn.bmob.v3.Bmob;
+import cn.bmob.v3.BmobInstallation;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
 
@@ -53,28 +55,17 @@ public class MainFragmentActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // 初始化BmobSDK
         Bmob.initialize(this, APPID);
+        // 使用推送服务时的初始化操作
+        BmobInstallation.getCurrentInstallation().save();
+        // 启动推送服务
+        BmobPush.startWork(this);
 
         setContentView(R.layout.fragment_main_page);
         initTabLine();
         init();
-    }
-    void test(){
-        Person p2 = new Person();
-        p2.setName("lucky");
-        p2.setAddress("北京海淀");
-        p2.save(new SaveListener<String>() {
-            @Override
-            public void done(String objectId,BmobException e) {
-                if(e==null){
-                    Toast.makeText(MainFragmentActivity.this,"添加数据成功，返回objectId为："+objectId,Toast.LENGTH_SHORT).show();
-                }else{
-//                    toast("创建数据失败：" + e.getMessage());
-                    Toast.makeText(MainFragmentActivity.this,"创建数据失败：" + e.getMessage(),Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
     private void init(){
 
