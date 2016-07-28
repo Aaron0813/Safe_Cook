@@ -33,23 +33,14 @@ public class IndoorIntroductionFragment extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-//        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        setContentView(R.layout.activity_main_page);
-//        iv_mainPage_menu= (ImageView) getActivity().findViewById(R.id.iv_mainPage_menu);
-        /*  之前是用来在activity之间进行跳转的，现在不用了*/
-//        iv_mainPage_menu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Toast.makeText(MainPageActivity.this,"菜单键被点击",Toast.LENGTH_SHORT).show();
-//                Intent intent=new Intent(MainPageActivity.this,MessageListActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        init();
+
+    }
+
+    private void init(){
         //油烟机开关-s1
-        s1= (Switch)getActivity(). findViewById(R.id.switch1);
+        s1= (Switch)getActivity(). findViewById(R.id.swt_cook_hood);
         s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -60,7 +51,7 @@ public class IndoorIntroductionFragment extends Fragment {
             }
         });
         //燃气灶开关-s2
-        s2= (Switch) getActivity().findViewById(R.id.switch2);
+        s2= (Switch) getActivity().findViewById(R.id.swt_gas_cooker);
         s2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -71,7 +62,7 @@ public class IndoorIntroductionFragment extends Fragment {
             }
         });
         //空气净化器-s3
-        s3= (Switch)getActivity(). findViewById(R.id.switch3);
+        s3= (Switch)getActivity(). findViewById(R.id.swt_air_cleaner);
         s3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -82,7 +73,7 @@ public class IndoorIntroductionFragment extends Fragment {
             }
         });
         //红外检测器-s4
-        s4= (Switch) getActivity().findViewById(R.id.switch4);
+        s4= (Switch) getActivity().findViewById(R.id.swt_infrared_detector);
         s4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {

@@ -37,11 +37,11 @@
     <TextView
         android:paddingTop="15dp"
         android:layout_width="wrap_content"
-        android:text="4~5"
+        android:hint="风力"
         android:textSize="25dp"
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
+        android:id="@+id/tv_wind"
         android:layout_below="@+id/tv_inRoom"
         android:layout_toRightOf="@+id/tv_inRoom"
         android:layout_toEndOf="@+id/tv_inRoom" />
@@ -60,14 +60,14 @@
     <TextView
         android:paddingTop="15dp"
         android:layout_width="wrap_content"
-        android:text="20%"
+        android:hint="湿度"
         android:textSize="25dp"
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5"
+        android:id="@+id/tv_humidity"
         android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignLeft="@+id/tv_wind"
+        android:layout_alignStart="@+id/tv_wind" />
 
     <ImageView
         android:paddingTop="5dp"
@@ -83,14 +83,14 @@
     <TextView
         android:paddingTop="15dp"
         android:layout_width="wrap_content"
-        android:text="26℃"
+        android:hint="温度"
         android:textSize="25dp"
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
-        android:id="@+id/textView6"
+        android:id="@+id/tv_temperature"
         android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_alignLeft="@+id/tv_humidity"
+        android:layout_alignStart="@+id/tv_humidity" />
 
     <ImageView
         android:paddingTop="5dp"
@@ -106,19 +106,19 @@
     <TextView
         android:paddingTop="15dp"
         android:layout_width="wrap_content"
-        android:text="优良"
+        android:hint="多云"
         android:textSize="25dp"
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
-        android:id="@+id/textView7"
+        android:id="@+id/tv_weather"
         android:layout_alignBottom="@+id/imageView3"
-        android:layout_alignRight="@+id/textView6"
-        android:layout_alignEnd="@+id/textView6" />
+        android:layout_alignRight="@+id/tv_temperature"
+        android:layout_alignEnd="@+id/tv_temperature" />
     <View
         android:layout_width="match_parent"
         android:background="#FFFFFF"
         android:layout_height="1dp"
-        android:layout_alignTop="@+id/switch1"
+        android:layout_alignTop="@+id/swt_cook_hood"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -129,8 +129,8 @@
         android:text="油烟机"
         android:textSize="25dp"
         android:height="30dp"
-        android:id="@+id/switch1"
-        android:layout_below="@+id/textView7"
+        android:id="@+id/swt_cook_hood"
+        android:layout_below="@+id/tv_weather"
         android:layout_alignLeft="@+id/tv_inRoom"
         android:layout_alignStart="@+id/tv_inRoom"
         android:layout_alignParentRight="true"
@@ -143,10 +143,10 @@
         android:text="燃气灶"
         android:textSize="25dp"
         android:height="30dp"
-        android:id="@+id/switch2"
-        android:layout_below="@+id/switch1"
-        android:layout_alignLeft="@+id/switch1"
-        android:layout_alignStart="@+id/switch1"
+        android:id="@+id/swt_gas_cooker"
+        android:layout_below="@+id/swt_cook_hood"
+        android:layout_alignLeft="@+id/swt_cook_hood"
+        android:layout_alignStart="@+id/swt_cook_hood"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -157,12 +157,12 @@
         android:text="空气净化器"
         android:textSize="25dp"
         android:height="30dp"
-        android:id="@+id/switch3"
-        android:layout_alignRight="@+id/switch2"
-        android:layout_alignEnd="@+id/switch2"
-        android:layout_below="@+id/switch2"
-        android:layout_alignLeft="@+id/switch2"
-        android:layout_alignStart="@+id/switch2" />
+        android:id="@+id/swt_air_cleaner"
+        android:layout_alignRight="@+id/swt_gas_cooker"
+        android:layout_alignEnd="@+id/swt_gas_cooker"
+        android:layout_below="@+id/swt_gas_cooker"
+        android:layout_alignLeft="@+id/swt_gas_cooker"
+        android:layout_alignStart="@+id/swt_gas_cooker" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -171,12 +171,12 @@
         android:text="红外检测器"
         android:textSize="25dp"
         android:height="30dp"
-        android:id="@+id/switch4"
-        android:layout_below="@+id/switch3"
-        android:layout_alignLeft="@+id/switch3"
-        android:layout_alignStart="@+id/switch3"
-        android:layout_alignRight="@+id/switch3"
-        android:layout_alignEnd="@+id/switch3" />
+        android:id="@+id/swt_infrared_detector"
+        android:layout_below="@+id/swt_air_cleaner"
+        android:layout_alignLeft="@+id/swt_air_cleaner"
+        android:layout_alignStart="@+id/swt_air_cleaner"
+        android:layout_alignRight="@+id/swt_air_cleaner"
+        android:layout_alignEnd="@+id/swt_air_cleaner" />
 
     <ImageView
         android:paddingTop="5dp"
