@@ -2,7 +2,10 @@
     <string name="app_name">SafeCook</string>
     <string name="device_name">抽油烟机</string>
     <string name="application_details_switch">定时开关</string>
-
+    <string name="btn_login">登陆</string>
+    <string name="btn_register">注册</string>
+    <string name="edt_username">请输入账号</string>
+    <string name="edt_password">请输入密码</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
