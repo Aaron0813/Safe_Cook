@@ -58,8 +58,7 @@ public class IndoorIntroductionFragment extends Fragment implements BDLocationLi
 //					String jsonString=array.getString(0);
 //					showTextView2.setText(jsonString);
 					JSONObject jsonObject=array.getJSONObject(0);
-//
-//
+
 //					WeatherState weatherBean=new WeatherState();
 //                        weatherBean.setTemperature(jsonObject.getString("low")+"-"+jsonObject.getString("high"));
 //                        weatherBean.setWind(jsonObject.getString("fengli"));
