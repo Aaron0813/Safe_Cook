@@ -5,11 +5,9 @@
     android:layout_height="match_parent">
     <TextView
         android:text="检测到燃气泄漏"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="#FFFFFF"
-        android:paddingTop="5dp"
-        android:paddingLeft="8dp"
-        android:id="@+id/tv_item_name"
+        android:id="@+id/tv_item_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -19,21 +17,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
-        android:textSize="30dp"
-        android:layout_marginRight="10dp"
+        android:textSize="20dp"
         android:textColor="#FFFFFF"
-        android:id="@+id/tv_item_state"
+        android:id="@+id/tv_item_time"
         android:layout_alignParentRight="true"
         />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:id="@+id/view_line"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
         android:background="#FFFFFF"
         android:foregroundGravity="center"
-        android:layout_below="@+id/tv_item_name"
+        android:layout_below="@+id/tv_item_content"
          />
 
 </RelativeLayout>
