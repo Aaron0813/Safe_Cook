@@ -24,12 +24,9 @@ import com.baidu.location.Poi;
 import com.baidu.mapapi.SDKInitializer;
 import com.example.administrator.safecook.R;
 import com.example.administrator.safecook.base.MyApplication;
-import com.example.administrator.safecook.domain.WeatherState;
 import com.example.administrator.safecook.utils.StreamUtils;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -114,13 +111,23 @@ public class IndoorIntroductionFragment extends Fragment implements BDLocationLi
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        SDKInitializer.initialize(MyApplication.getContext());
+//        mLocationClient = new LocationClient(MyApplication.getContext());     //声明LocationClient类
+//        mLocationClient.registerLocationListener(this);    //注册监听函数
+//        initLocation();
+//        mLocationClient.start();
+        init();
+
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         SDKInitializer.initialize(MyApplication.getContext());
         mLocationClient = new LocationClient(MyApplication.getContext());     //声明LocationClient类
         mLocationClient.registerLocationListener(this);    //注册监听函数
         initLocation();
         mLocationClient.start();
-        init();
-
     }
 
     private void init(){
